@@ -1,24 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useState, useEffect } from "react";
+// import image from "../img/anime-image.jpg";
 
 function App() {
+  const [data, setData] = useState(null);
+  const date = new Date();
+  const Show = () => {
+    return (
+      <h1 classNameName="limit">
+        Hold up, The characters behind the scenes cant keep coming up with
+        quotes...
+      </h1>
+    );
+  };
+
+  const getData = async () => {
+    const data = await fetch("https://animechan.xyz/api/random");
+    const json = await data.json();
+    setData(json);
+  };
+  useEffect(() => {
+    getData();
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="bg">
+        <h1>AnimeQuote</h1>
+      </div>
+      <div onClick={getData} className="container">
+        {!data ? (
+          <Show />
+        ) : (
+          <div className="main">
+            <img
+              className="tokenImage"
+              src="https://i.pinimg.com/736x/79/07/5d/79075d5a8667cafe0845b3333cc42ebc.jpg"
+              alt="anime"
+            />
+            <h1>{data.anime}</h1>
+            <p>{data.character}</p>
+            <p classNameName="description">{data.quote}</p>
+            <div className="tokenInfo">
+              <div className="duration">
+                <ins>◷</ins>
+                <p>{date.toLocaleString()}</p>
+              </div>
+            </div>
+            <hr />
+          </div>
+        )}
+      </div>
+    </>
   );
 }
 
