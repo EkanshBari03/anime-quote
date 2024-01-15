@@ -38,7 +38,7 @@ function App() {
               alt="anime"
             />
             <h1>{data.anime}</h1>
-            <p>{data.character}</p>
+            <h3>{data.character}</h3>
             <p classNameName="description">{data.quote}</p>
             <div className="tokenInfo">
               <div className="duration">
