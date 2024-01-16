@@ -7,7 +7,7 @@ function App() {
   const date = new Date();
   const Show = () => {
     return (
-      <h1 classNameName="limit">
+      <h1 classNameName="limit" style={{ margin: "5rem" }}>
         Hold up, The characters behind the scenes cant keep coming up with
         quotes...
       </h1>
@@ -15,9 +15,13 @@ function App() {
   };
 
   const getData = async () => {
-    const data = await fetch("https://animechan.xyz/api/random");
-    const json = await data.json();
-    setData(json);
+    try {
+      const data = await fetch("https://animechan.xyz/api/random");
+      const json = await data.json();
+      setData(json);
+    } catch (error) {
+      return <Show />;
+    }
   };
   useEffect(() => {
     getData();

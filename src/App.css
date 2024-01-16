@@ -14,8 +14,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
 .container{
+  
   user-select:none;
   max-width: 600px;
   margin: 5rem auto;
@@ -114,7 +114,7 @@ code {
     top: -10%;
     left: -100%;
     transform: rotate(-45deg);
-    height: 60rem;
+    height: 100vh;
     transition: .7s all;
   }
   &:hover{
@@ -136,7 +136,10 @@ code {
   left: 50%;
   transform: translate(-50%, -50%);
   h1{
-    font-size: 15rem;
+    font-size: 17vw;
     filter: opacity(0.5);
   }
 }
+
+
+
