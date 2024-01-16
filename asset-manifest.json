@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/anime-quote/static/css/main.3a165f66.css",
-    "main.js": "/anime-quote/static/js/main.78c4a64e.js",
+    "main.css": "/anime-quote/static/css/main.32867ae7.css",
+    "main.js": "/anime-quote/static/js/main.30563233.js",
     "index.html": "/anime-quote/index.html",
-    "main.3a165f66.css.map": "/anime-quote/static/css/main.3a165f66.css.map",
-    "main.78c4a64e.js.map": "/anime-quote/static/js/main.78c4a64e.js.map"
+    "main.32867ae7.css.map": "/anime-quote/static/css/main.32867ae7.css.map",
+    "main.30563233.js.map": "/anime-quote/static/js/main.30563233.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a165f66.css",
-    "static/js/main.78c4a64e.js"
+    "static/css/main.32867ae7.css",
+    "static/js/main.30563233.js"
   ]
 }
