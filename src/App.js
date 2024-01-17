@@ -7,7 +7,7 @@ function App() {
   const date = new Date();
   const Show = () => {
     return (
-      <h1 classNameName="limit" style={{ margin: "5rem" }}>
+      <h1 className="limit" style={{ margin: "5rem" }}>
         Hold up, The characters behind the scenes cant keep coming up with
         quotes...
       </h1>
