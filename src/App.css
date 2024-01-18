@@ -14,11 +14,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.parent{
+  width: 100%;
+  display: flex;
+  align-items: center; 
+  height: 100vh; 
+}
 .container{
   
   user-select:none;
   max-width: 600px;
-  margin: 5rem auto;
+  margin: 50% auto;
   border: 1px solid #ffffff22;
   background-color: #282c34;
   background: linear-gradient(0deg, rgba(40,44,52,1) 0%, rgba(17,0,32,.5) 100%);
@@ -41,11 +47,9 @@ code {
   .main{
     display: flex;
     flex-direction: column;
-    /* width: 95%; */
     padding: 1rem;
     .tokenImage{
       border-radius: .5rem;
-      /* max-width: 97%; */
       height: 250px;
       object-fit: cover;
     }
@@ -122,6 +126,7 @@ code {
 }
 
 .bg{
+
   position: fixed;
   top: 50%;
   left: 50%;
@@ -131,6 +136,5 @@ code {
     filter: opacity(0.5);
   }
 }
-
 
 

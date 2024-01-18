@@ -23,7 +23,7 @@ function Anime() {
 
       const date = new Date();
     return (
-      <>
+      <div className="parent">
        <div className="bg">
         <h1>AnimeQuote</h1>
       </div>
@@ -50,7 +50,7 @@ function Anime() {
           </div>
         )}
       </div>
-        </>
+        </div>
     )
   }
 
